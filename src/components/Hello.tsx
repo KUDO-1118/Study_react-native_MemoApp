@@ -2,13 +2,18 @@ import { View, Text, StyleSheet } from 'react-native'
 
 interface Props {
   children: string
+  bang?: boolean
+  // bang?はオプションとして扱うので使っても使わなくても良い
 }
 
 const Hello = (props: Props): JSX.Element => {
-  const { children } = props
+  const { children, bang } = props
   return (
     <View>
-      <Text style={styles.text}>Hello {children}</Text>
+      <Text style={styles.text}>
+        Hello {children}{bang === true ? '!' : ''}
+        {/* ===は等しいという意味 */}
+      </Text>
     </View>
   )
 }
