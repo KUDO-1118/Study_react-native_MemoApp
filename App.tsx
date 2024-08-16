@@ -7,6 +7,7 @@ const App = (): JSX.Element => {
   return (
     <View style={styles.container}>
       <Hello bang>World</Hello> 
+      <Hello style={{fontSize: 16}} bang>World</Hello> 
       {/* bang（boolean）はデフォルトがture */}
       <Text>Open up App.tsx to start working on your app!!!</Text>
       <StatusBar style="auto" />
