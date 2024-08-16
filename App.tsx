@@ -6,7 +6,7 @@ import Hello from './src/components/Hello'
 const App = (): JSX.Element => {
   return (
     <View style={styles.container}>
-      <Hello />
+      <Hello>World</Hello> { /*children (子要素)*/}
       <Text>Open up App.tsx to start working on your app!!!</Text>
       <StatusBar style="auto" />
     </View>
