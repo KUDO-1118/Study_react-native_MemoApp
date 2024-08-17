@@ -5,7 +5,7 @@ const Index = (): JSX.Element => {
     <View style={styles.container}>
       
       <View style={styles.header}>
-        <View style={styles.Inner}>
+        <View style={styles.headerInner}>
           <Text style={styles.headerTitle}>Memo App</Text>
           <Text style={styles.headerRight}>ログアウト</Text>
         </View>
