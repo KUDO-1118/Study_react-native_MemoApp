@@ -18,6 +18,7 @@ export default [
     ...pluginReact.configs.flat.recommended,
     rules: {
       "react/react-in-jsx-scope": "off", // ルールを無効にする
+      '@typescript-eslint/no-unused-vars': 'off'
     },
   },
 ];
