@@ -1,5 +1,5 @@
-import { View, StyleSheet } from 'react-native'
-import { router } from 'expo-router'
+import { View, Text, StyleSheet } from 'react-native'
+import { router, useNavigation } from 'expo-router'
 
 import MemoListItem from '../../components/MemoListitem'
 import CircleButton from '../../components/CircleButton'
@@ -10,6 +10,12 @@ const handlePress = (): void => {
 }
 
 const List = (): JSX.Element => {
+  const navigation = useNavigation()
+  navigation.setOptions({
+    headerRight: () => {
+      return <Text>Test</Text>
+    }
+  })
   return (
     <View style={styles.container}>
       <View>

@@ -7,7 +7,8 @@ import Button from '../../components/Button'
 
 const handlePress = (): void => {
   // ログイン
-  router.push('/memo/list')
+  router.replace('/memo/list')
+  //replaceで前の画面に戻れなくなるメソッド
 }
 
 const LogIn = (): JSX.Element => {
