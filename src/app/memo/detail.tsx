@@ -1,5 +1,5 @@
 import { View, Text, ScrollView, StyleSheet } from 'react-native'
-import { router } from 'expo-router'
+import { router, useLocalSearchParams } from 'expo-router'
 
 import CircleButton from '../../components/CircleButton'
 import Icon from '../../components/icon'
@@ -9,6 +9,8 @@ const handlePress = (): void => {
 }
 
 const Detail = (): JSX.Element => {
+  const { id } = useLocalSearchParams() //idを取得
+  console.log(id)
   return (
     <View>
       <View style={styles.memoMeader}>
